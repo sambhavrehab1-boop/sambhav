@@ -83,7 +83,7 @@ export default function SambhavLandingPage() {
             </div>
             <div className="flex items-center gap-2">
               <MapPin className="w-5 h-5 text-green-600" />
-              <span>Shimla bypass road, near majestic honda, Dehradun, Uttarakhand, India</span>
+              <span>Shimla Bypass Road, Near Majestic Honda, Dehradun, Uttarakhand, India</span>
             </div>
           </div>
         </div>
