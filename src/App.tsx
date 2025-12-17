@@ -165,6 +165,15 @@ export default function SambhavLandingPage() {
       ></iframe>
     </div>
   </div>
+  {/* ================= STICKY CALL BUTTON ================= */}
+<a
+  href="tel:+917467845235"
+  className="fixed bottom-6 left-6 bg-blue-600 hover:bg-blue-700 text-white px-5 py-3 rounded-full shadow-lg flex items-center gap-2 z-50 md:hidden"
+>
+  <Phone className="w-5 h-5" />
+  Call Now
+</a>
+
   {/* ================= WHATSAPP FLOATING BUTTON ================= */}
 <a
   href="https://wa.me/917467845235?text=Hello%20I%20need%20help%20regarding%20Nasha%20Mukti%20treatment"
