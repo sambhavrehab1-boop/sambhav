@@ -113,6 +113,110 @@ export default function SambhavLandingPage() {
         </div>
       </section>
 
+      {/* ================= TESTIMONIALS SECTION ================= */}
+<section className="py-16 px-6 bg-white">
+  <div className="max-w-5xl mx-auto">
+    <h2 className="text-3xl font-bold text-center mb-10">
+      Recovery Stories from Dehradun
+    </h2>
+
+    <p className="text-center mb-12 max-w-3xl mx-auto">
+      Families across Dehradun, Haridwar, and nearby areas trust Sambhav Nasha Mukti Kendra
+      for safe, structured, and compassionate addiction treatment.
+    </p>
+
+    <div className="grid md:grid-cols-3 gap-6">
+      <div className="bg-gray-50 p-6 rounded-2xl shadow">
+        <p className="mb-4">
+          “My brother’s life changed completely after treatment at Sambhav Nasha Mukti Kendra.
+          The staff is caring and the environment is peaceful.”
+        </p>
+        <p className="font-semibold">— Family Member, Dehradun</p>
+      </div>
+
+      <div className="bg-gray-50 p-6 rounded-2xl shadow">
+        <p className="mb-4">
+          “Best nasha mukti kendra in Dehradun. Proper counseling, discipline,
+          and continuous medical support helped me recover.”
+        </p>
+        <p className="font-semibold">— Recovered Patient</p>
+      </div>
+
+      <div className="bg-gray-50 p-6 rounded-2xl shadow">
+        <p className="mb-4">
+          “We searched for a reliable alcohol de-addiction center in Dehradun and
+          Sambhav gave us hope and results.”
+        </p>
+        <p className="font-semibold">— Parent</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{/* ================= FAQ SECTION ================= */}
+<section className="py-16 px-6 bg-gray-50">
+  <div className="max-w-5xl mx-auto">
+    <h2 className="text-3xl font-bold text-center mb-10">
+      Frequently Asked Questions – Nasha Mukti Kendra Dehradun
+    </h2>
+
+    <div className="space-y-6">
+      <div className="bg-white p-6 rounded-2xl shadow">
+        <h3 className="font-semibold text-lg mb-2">
+          What is Sambhav Nasha Mukti Kendra?
+        </h3>
+        <p>
+          Sambhav Nasha Mukti Kendra in Dehradun is a professional rehabilitation
+          center providing treatment for alcohol addiction, drug addiction,
+          and substance abuse with medical care and counseling.
+        </p>
+      </div>
+
+      <div className="bg-white p-6 rounded-2xl shadow">
+        <h3 className="font-semibold text-lg mb-2">
+          Which addictions are treated at your center?
+        </h3>
+        <p>
+          We treat alcohol addiction, drug addiction, tobacco dependence,
+          and other substance abuse problems with structured recovery programs.
+        </p>
+      </div>
+
+      <div className="bg-white p-6 rounded-2xl shadow">
+        <h3 className="font-semibold text-lg mb-2">
+          Is Sambhav Nasha Mukti Kendra located in Dehradun?
+        </h3>
+        <p>
+          Yes, Sambhav Nasha Mukti Kendra is located on Shimla Bypass Road,
+          Dehradun, Uttarakhand and serves patients from Dehradun, Haridwar,
+          Rishikesh, and nearby areas.
+        </p>
+      </div>
+
+      <div className="bg-white p-6 rounded-2xl shadow">
+        <h3 className="font-semibold text-lg mb-2">
+          How long does the treatment take?
+        </h3>
+        <p>
+          Treatment duration depends on the patient’s condition.
+          Programs generally range from a few weeks to a few months,
+          followed by aftercare and follow-up support.
+        </p>
+      </div>
+
+      <div className="bg-white p-6 rounded-2xl shadow">
+        <h3 className="font-semibold text-lg mb-2">
+          How can I contact Sambhav Nasha Mukti Kendra?
+        </h3>
+        <p>
+          You can call us directly at <strong>+91 7467845235</strong> for
+          confidential consultation and immediate assistance.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
       {/* ================= CONTACT SECTION ================= */}
       <section className="py-16 px-6">
         <div className="max-w-5xl mx-auto text-center">
