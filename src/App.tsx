@@ -6,7 +6,7 @@ export default function SambhavLandingPage() {
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-green-700 to-green-500 text-white py-20 px-6">
         <div className="max-w-5xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Sambhav Nasha Mukti Center</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Sambhav Nasha Mukti Kendra</h1>
           <p className="text-lg md:text-xl mb-6">
             A New Beginning Towards a Healthy & Addiction-Free Life
           </p>
