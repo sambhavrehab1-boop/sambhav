@@ -272,7 +272,7 @@ export default function SambhavLandingPage() {
   {/* ================= STICKY CALL BUTTON ================= */}
 <a
   href="tel:+917467845235"
-  className="fixed bottom-6 left-6 bg-blue-600 hover:bg-blue-700 text-white px-5 py-3 rounded-full shadow-lg flex items-center gap-2 z-50 md:hidden"
+  className="fixed bottom-6 left-6 bg-green-600 hover:bg-blue-700 text-white px-5 py-3 rounded-full shadow-lg flex items-center gap-2 z-50 md:hidden"
 >
   <Phone className="w-5 h-5" />
   Call Now
@@ -295,9 +295,7 @@ export default function SambhavLandingPage() {
   </svg>
   WhatsApp
 </a>
-
 </section>
-
       {/* ================= FOOTER ================= */}
       <footer className="bg-green-700 text-white py-6 text-center">
         <p>
