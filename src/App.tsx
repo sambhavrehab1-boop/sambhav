@@ -1,7 +1,7 @@
 import { Phone, MapPin, HeartHandshake } from "lucide-react";
 import "./index.css";
 import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/react"
 export default function SambhavLandingPage() {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800">
