@@ -1,6 +1,6 @@
 import { Phone, MapPin, HeartHandshake } from "lucide-react";
 import "./index.css";
-
+import { Analytics } from "@vercel/analytics/react";
 export default function SambhavLandingPage() {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800">
@@ -305,6 +305,8 @@ export default function SambhavLandingPage() {
           All rights reserved.
         </p>
       </footer>
+      <Analytics />
     </div>
+    
   );
 }
