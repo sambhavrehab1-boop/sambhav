@@ -21,23 +21,41 @@ export default function About() {
                     </p>
                 </div>
 
-                <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-start">
-                    <div className="relative">
-                        {/* Photo Frame */}
-                        <div className="relative rounded-t-full rounded-b-3xl overflow-hidden shadow-2xl border-[6px] border-white z-10">
-                            <img
-                                src="/rehab-center-director.webp"
-                                alt="Director"
-                                className="w-full h-auto object-cover"
-                            />
-                            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-orange-900/90 to-transparent pt-24 pb-8 px-8 text-white text-center">
-                                <p className="font-serif text-2xl font-bold">Mr. Kartik Barthwal</p>
-                                <p className="text-orange-200 text-sm tracking-widest uppercase mt-1">Founder & Director</p>
+                <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-start">
+                    <div className="grid grid-cols-2 gap-6 relative">
+                        {/* Director 1: Kartik Barthwal */}
+                        <div className="relative">
+                            <div className="relative rounded-t-full rounded-b-2xl overflow-hidden shadow-xl border-4 border-white z-10 transition-transform hover:scale-105 duration-500 aspect-[3/4]">
+                                <img
+                                    src="/rehab-center-director.webp"
+                                    alt="Mr. Kartik Barthwal - Director"
+                                    className="w-full h-full object-cover object-top"
+                                />
+                                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-orange-900/90 via-orange-900/40 to-transparent pt-12 pb-4 px-3 text-white text-center">
+                                    <p className="font-serif text-sm md:text-lg font-bold leading-tight">Mr. Kartik Barthwal</p>
+                                    <p className="text-orange-200 text-[8px] md:text-[10px] tracking-widest uppercase mt-0.5">Founder & Director</p>
+                                </div>
                             </div>
                         </div>
-                        {/* Decorative Circle */}
-                        <div className="absolute -top-12 -right-12 w-64 h-64 bg-orange-100 rounded-full -z-0 opacity-60 blur-2xl"></div>
-                        <div className="absolute -bottom-12 -left-12 w-64 h-64 bg-green-50 rounded-full -z-0 opacity-60 blur-2xl"></div>
+
+                        {/* Director 2: Shivam Badola */}
+                        <div className="relative">
+                            <div className="relative rounded-t-full rounded-b-2xl overflow-hidden shadow-xl border-4 border-white z-10 transition-transform hover:scale-105 duration-500 aspect-[3/4]">
+                                <img
+                                    src="/shivam-badola.webp"
+                                    alt="Mr. Shivam Badola - Director"
+                                    className="w-full h-full object-cover object-top"
+                                />
+                                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-orange-900/90 via-orange-900/40 to-transparent pt-12 pb-4 px-3 text-white text-center">
+                                    <p className="font-serif text-sm md:text-lg font-bold leading-tight">Mr. Shivam Badola</p>
+                                    <p className="text-orange-200 text-[8px] md:text-[10px] tracking-widest uppercase mt-0.5">Founder & Director</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Decorative background elements */}
+                        <div className="absolute -top-6 -right-6 w-48 h-48 bg-orange-100 rounded-full -z-0 opacity-40 blur-3xl"></div>
+                        <div className="absolute -bottom-6 -left-6 w-48 h-48 bg-green-50 rounded-full -z-0 opacity-40 blur-3xl"></div>
                     </div>
 
                     <div className="relative pt-8">

@@ -84,20 +84,32 @@ export default function Home() {
 
                 <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center relative z-10">
                     <div className="relative flex justify-center">
-                        {/* "Arch" Frame Implementation */}
-                        <div className="relative w-full max-w-md">
-                            <div className="absolute inset-0 border-2 border-orange-200 rounded-t-full rounded-b-3xl translate-x-4 translate-y-4"></div>
+                        <div className="relative w-full max-w-lg">
+                            <div className="absolute inset-0 border-2 border-orange-200 rounded-2xl translate-x-4 translate-y-4"></div>
                             <FadeIn direction="right">
-                                <div className="relative rounded-t-full rounded-b-3xl overflow-hidden shadow-2xl border-4 border-white aspect-[3/4]">
-                                    <img
-                                        src="/rehab-center-director.webp"
-                                        alt="Director of Sambhav Nasha Mukti Kendra"
-                                        loading="lazy"
-                                        className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
-                                    />
-                                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6 text-white">
-                                        <p className="font-serif text-lg font-bold">Mr. Kartik Barthwal</p>
-                                        <p className="text-sm text-orange-100 opacity-90">Director & Founder</p>
+                                <div className="grid grid-cols-2 gap-3 relative z-10">
+                                    {/* Kartik Photo */}
+                                    <div className="relative rounded-2xl overflow-hidden shadow-lg border-2 border-white aspect-[3/4]">
+                                        <img
+                                            src="/rehab-center-director.webp"
+                                            alt="Director Kartik Barthwal"
+                                            loading="lazy"
+                                            className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
+                                        />
+                                    </div>
+                                    {/* Shivam Photo */}
+                                    <div className="relative rounded-2xl overflow-hidden shadow-lg border-2 border-white aspect-[3/4]">
+                                        <img
+                                            src="/shivam-badola.webp"
+                                            alt="Director Shivam Badola"
+                                            loading="lazy"
+                                            className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
+                                        />
+                                    </div>
+                                    {/* Overlay Text */}
+                                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4 text-white rounded-b-2xl">
+                                        <p className="font-serif text-sm md:text-base font-bold text-center">Mr. Kartik Barthwal & Mr. Shivam Badola</p>
+                                        <p className="text-[10px] md:text-xs text-orange-200 text-center opacity-90 uppercase tracking-widest mt-0.5">Directors & Founders</p>
                                     </div>
                                 </div>
                             </FadeIn>
