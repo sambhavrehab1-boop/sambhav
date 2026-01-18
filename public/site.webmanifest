@@ -1,0 +1,22 @@
+{
+    "name": "Sambhav Nasha Mukti Kendra",
+    "short_name": "Sambhav Rehab",
+    "id": "/",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#15803d",
+    "description": "Trusted Nasha Mukti Kendra in Dehradun offering drug and alcohol rehabilitation services.",
+    "icons": [
+        {
+            "src": "/sambhav-logo.jpg",
+            "sizes": "192x192",
+            "type": "image/jpeg"
+        },
+        {
+            "src": "/sambhav-logo.jpg",
+            "sizes": "512x512",
+            "type": "image/jpeg"
+        }
+    ]
+}
