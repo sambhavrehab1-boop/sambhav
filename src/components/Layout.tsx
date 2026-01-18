@@ -12,7 +12,7 @@ export default function Layout() {
         // eslint-disable-next-line react-hooks/set-state-in-effect
         if (isMenuOpen) setIsMenuOpen(false);
         window.scrollTo(0, 0); // Scroll to top
-    }, [location.pathname, isMenuOpen]);
+    }, [location.pathname]);
 
     return (
         <div className="min-h-screen bg-stone-50 font-sans flex flex-col">
