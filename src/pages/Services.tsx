@@ -1,16 +1,19 @@
 import { CheckCircle2 } from "lucide-react";
-import { useDocumentTitle } from "../hooks/useDocumentTitle";
+import { useSEO } from "../hooks/useSEO";
 import FadeIn from "../components/FadeIn";
 
 export default function Services() {
-    useDocumentTitle("Our Services - Alcohol & Drug Treatment");
+    useSEO(
+        "Our Services - Alcohol & Drug Treatment in Dehradun",
+        "Comprehensive addiction treatment services in Dehradun, including Detoxification, Counseling, Alcohol De-addiction, and Drug Rehabilitation with 24/7 care."
+    );
     const services = [
-        { title: "Alcohol De-Addiction", desc: "Specialized treatment to overcome alcohol dependency safely.", img: "/alcohol-treatment.png" },
-        { title: "Drug Rehabilitation", desc: "Expert care for recovery from drug abuse and narcotic substances.", img: "/drug-rehabilitation.png" },
-        { title: "Detoxification", desc: "Medical supervision to manage withdrawal symptoms effectively.", img: "/detoxification-care.png" },
-        { title: "Counseling & Therapy", desc: "Psychological support to address root causes of addiction.", img: "/counseling-therapy.png" },
-        { title: "Family Support", desc: "Guidance for families to help their loved ones recover.", img: "/family-support.png" },
-        { title: "Relapse Prevention", desc: "Tools and strategies to maintain long-term sobriety.", img: "/relapse-prevention.png" },
+        { title: "Alcohol De-Addiction", desc: "Specialized treatment to overcome alcohol dependency safely.", img: "/alcohol-treatment.webp" },
+        { title: "Drug Rehabilitation", desc: "Expert care for recovery from drug abuse and narcotic substances.", img: "/drug-rehabilitation.webp" },
+        { title: "Detoxification", desc: "Medical supervision to manage withdrawal symptoms effectively.", img: "/detoxification-care.webp" },
+        { title: "Counseling & Therapy", desc: "Psychological support to address root causes of addiction.", img: "/counseling-therapy.webp" },
+        { title: "Family Support", desc: "Guidance for families to help their loved ones recover.", img: "/family-support.webp" },
+        { title: "Relapse Prevention", desc: "Tools and strategies to maintain long-term sobriety.", img: "/relapse-prevention.webp" },
     ];
 
     return (
@@ -19,7 +22,7 @@ export default function Services() {
                 <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: "url('https://www.transparenttextures.com/patterns/sativa.png')" }}></div>
                 <div className="max-w-4xl mx-auto text-center relative z-10">
                     <FadeIn>
-                        <h1 className="text-4xl md:text-5xl font-bold mb-6 font-serif">Our Seva (Services)</h1>
+                        <h1 className="text-4xl md:text-5xl font-bold mb-6 font-serif">Our Seva: Best Rehab Services in Dehradun</h1>
                         <p className="text-xl text-orange-100 max-w-2xl mx-auto">
                             Comprehensive, evidence-based care tailored to your unique needs, delivered with traditional Indian compassion.
                         </p>
@@ -42,7 +45,7 @@ export default function Services() {
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-orange-900/60 to-transparent opacity-50 group-hover:opacity-30 transition-opacity"></div>
                                     <div className="absolute bottom-4 left-6 right-6">
-                                        <h3 className="font-bold text-2xl text-white font-serif shadow-black drop-shadow-md">{service.title}</h3>
+                                        <h2 className="font-bold text-2xl text-white font-serif shadow-black drop-shadow-md">{service.title}</h2>
                                     </div>
                                 </div>
                                 <div className="p-8 pt-6">

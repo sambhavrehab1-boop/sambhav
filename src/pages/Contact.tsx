@@ -1,13 +1,16 @@
 import { MapPin, Phone, Clock } from "lucide-react";
-import { useDocumentTitle } from "../hooks/useDocumentTitle";
+import { useSEO } from "../hooks/useSEO";
 
 export default function Contact() {
-    useDocumentTitle("Contact Us - 24/7 Helpline");
+    useSEO(
+        "Contact Us - Best Nasha Mukti Kendra in Dehradun",
+        "Contact Sambhav Nasha Mukti Kendra in Dehradun for 24/7 helpline and immediate assistance for alcohol and drug addiction treatment."
+    );
     return (
         <div className="animate-in fade-in zoom-in duration-500">
             <section className="bg-stone-50 py-20 px-6">
                 <div className="max-w-4xl mx-auto text-center mb-12">
-                    <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 font-serif">Contact Sambhav <span className="text-green-700 block text-3xl md:text-4xl mt-2">Nasha Mukti Kendra</span></h1>
+                    <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 font-serif uppercase tracking-tight">Contact Sambhav <span className="text-green-700 block text-3xl md:text-4xl mt-2">Nasha Mukti Kendra</span></h1>
                     <p className="text-xl text-gray-600">
                         We are here to help 24/7. Reach out to the best De-Addiction Center in Dehradun.
                     </p>
@@ -20,7 +23,7 @@ export default function Contact() {
                                 <Phone className="w-8 h-8 text-green-700" />
                             </div>
                             <div>
-                                <h3 className="font-bold text-xl mb-2">Phone</h3>
+                                <h2 className="font-bold text-xl mb-2">Phone</h2>
                                 <p className="text-gray-600 mb-2">Available 24/7 for emergency</p>
                                 <a href="tel:+917467845235" className="text-2xl font-bold text-green-700 hover:underline">+91 74678 45235</a>
                             </div>
@@ -31,7 +34,7 @@ export default function Contact() {
                                 <MapPin className="w-8 h-8 text-green-700" />
                             </div>
                             <div>
-                                <h3 className="font-bold text-xl mb-2">Location</h3>
+                                <h2 className="font-bold text-xl mb-2">Location</h2>
                                 <p className="text-gray-600 text-lg">
                                     Shimla Bypass Road, Near Majestic Honda,<br />
                                     Dehradun, Uttarakhand, India
@@ -44,7 +47,7 @@ export default function Contact() {
                                 <Clock className="w-8 h-8 text-green-700" />
                             </div>
                             <div>
-                                <h3 className="font-bold text-xl mb-2">Visiting Hours</h3>
+                                <h2 className="font-bold text-xl mb-2">Visiting Hours</h2>
                                 <p className="text-gray-600 text-lg">
                                     Open 24 Hours for Admissions.<br />
                                     Family Visiting: 10:00 AM - 5:00 PM (Sunday)

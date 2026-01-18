@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import type { ReactNode } from "react";
 
 interface FadeInProps {
@@ -17,7 +17,7 @@ export default function FadeIn({ children, delay = 0, direction = "up", classNam
     };
 
     return (
-        <motion.div
+        <m.div
             initial={{ opacity: 0, ...directions[direction] }}
             whileInView={{ opacity: 1, x: 0, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
@@ -25,6 +25,6 @@ export default function FadeIn({ children, delay = 0, direction = "up", classNam
             className={className}
         >
             {children}
-        </motion.div>
+        </m.div>
     );
 }

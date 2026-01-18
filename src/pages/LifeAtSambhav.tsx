@@ -1,41 +1,44 @@
 import { Calendar, PartyPopper, Users, X, ZoomIn } from "lucide-react";
-import { useDocumentTitle } from "../hooks/useDocumentTitle";
+import { useSEO } from "../hooks/useSEO";
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { m, AnimatePresence } from "framer-motion";
 import FadeIn from "../components/FadeIn";
 
 export default function LifeAtSambhav() {
-    useDocumentTitle("Life at Sambhav - Recovery Stories & Gallery");
+    useSEO(
+        "Life at Sambhav - Recovery Stories & Gallery",
+        "Take a look at the life at Sambhav Nasha Mukti Kendra. Explore our gallery of recovery milestones, daily routines, and community celebrations in Dehradun."
+    );
     const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
     const moments = [
         {
-            img: "/recovery-birthday-celebration.jpg",
+            img: "/recovery-birthday-celebration.webp",
             title: "Celebrating Milestones",
             desc: "Every birthday in recovery is a victory. We celebrate life, joy, and the strength of our residents."
         },
         {
-            img: "/recovery-cake-cutting.jpg",
+            img: "/recovery-cake-cutting.webp",
             title: "Shared Joy",
             desc: "Recovery is not a lonely journey. At Sambhav, we are a family that celebrates together."
         },
         {
-            img: "/recovery-birthday-cake-closeup.jpg",
+            img: "/recovery-birthday-cake-closeup.webp",
             title: "Small Moments, Big Wins",
             desc: "Cutting a cake might seem simple, but for someone in recovery, it represents a new chapter of dignity."
         },
         {
-            img: "/recovery-celebration-moment.jpg",
+            img: "/recovery-celebration-moment.webp",
             title: "Building Bonds",
             desc: "Support from peers is crucial. These celebrations foster a sense of belonging and hope."
         },
         {
-            img: "/meditation-session-dehradun.jpg",
+            img: "/meditation-session-dehradun.webp",
             title: "Morning Discipline",
             desc: "Yoga and meditation sessions to start the day with peace and mental clarity."
         },
         {
-            img: "/sambhav-rehab-building.jpg",
+            img: "/sambhav-rehab-building.webp",
             title: "Our Home",
             desc: "A safe, secure, and peaceful environment designed for healing and personal growth."
         }
@@ -115,7 +118,7 @@ export default function LifeAtSambhav() {
             {/* LIGHTBOX MODAL */}
             <AnimatePresence>
                 {selectedImage && (
-                    <motion.div
+                    <m.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
@@ -125,7 +128,7 @@ export default function LifeAtSambhav() {
                         <button className="absolute top-6 right-6 text-white p-2 hover:bg-white/10 rounded-full transition">
                             <X className="w-8 h-8" />
                         </button>
-                        <motion.img
+                        <m.img
                             initial={{ scale: 0.9, opacity: 0 }}
                             animate={{ scale: 1, opacity: 1 }}
                             exit={{ scale: 0.9, opacity: 0 }}
@@ -134,7 +137,7 @@ export default function LifeAtSambhav() {
                             className="max-w-full max-h-[90vh] rounded-lg shadow-2xl object-contain"
                             onClick={(e) => e.stopPropagation()}
                         />
-                    </motion.div>
+                    </m.div>
                 )}
             </AnimatePresence>
         </div>

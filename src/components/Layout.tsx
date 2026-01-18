@@ -2,6 +2,7 @@ import { Outlet, Link, useLocation } from "react-router-dom";
 import { Phone, Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 export default function Layout() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,8 +23,10 @@ export default function Layout() {
                     {/* Logo */}
                     <Link to="/" className="flex items-center gap-4">
                         <img
-                            src="/sambhav-logo.jpg"
+                            src="/sambhav-logo.webp"
                             alt="Sambhav Rehab Logo"
+                            width="56"
+                            height="56"
                             className="h-14 w-auto object-contain rounded-md"
                         />
                         <div className="hidden md:block">
@@ -50,13 +53,14 @@ export default function Layout() {
                             href="https://wa.me/917467845235"
                             className="bg-green-500 hover:bg-green-600 text-white p-2 rounded-full shadow-lg transition-all hover:scale-105"
                             title="Chat on WhatsApp"
+                            aria-label="Chat on WhatsApp"
                         >
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" className="w-6 h-6 filter brightness-0 invert" />
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="" width="24" height="24" className="w-6 h-6 filter brightness-0 invert" />
                         </a>
                     </div>
 
                     {/* Mobile Menu Toggle */}
-                    <button className="md:hidden p-2 text-gray-600" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                    <button className="md:hidden p-2 text-gray-600" onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Toggle menu">
                         {isMenuOpen ? <X /> : <Menu />}
                     </button>
                 </div>
@@ -123,11 +127,13 @@ export default function Layout() {
                     rel="noopener noreferrer"
                     className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl flex items-center justify-center transform hover:scale-110 transition-all duration-300"
                     title="Chat on WhatsApp"
+                    aria-label="Chat on WhatsApp"
                 >
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" className="w-8 h-8 filter brightness-0 invert" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="" width="32" height="32" className="w-8 h-8 filter brightness-0 invert" />
                 </a>
             </div>
             <Analytics />
+            <SpeedInsights />
         </div>
     );
 }

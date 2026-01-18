@@ -1,12 +1,15 @@
 import { HeartHandshake, ShieldCheck, Star } from "lucide-react";
-import { useDocumentTitle } from "../hooks/useDocumentTitle";
+import { useSEO } from "../hooks/useSEO";
 
 export default function About() {
-    useDocumentTitle("About Us - Leading De-Addiction Center");
+    useSEO(
+        "About Us - Leading De-Addiction Center in Dehradun",
+        "Learn about Sambhav Nasha Mukti Kendra's mission and values. We provide compassionate drug and alcohol rehabilitation services in Dehradun with high recovery rates."
+    );
     return (
         <div className="animate-in fade-in zoom-in duration-500 bg-orange-50/30 min-h-screen">
             <section className="relative pt-20 pb-32 px-6 overflow-hidden">
-                <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: "url('https://www.transparenttextures.com/patterns/sativa.png')" }}></div>
+                <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: "url('https://www.transparenttextures.com/patterns/sativa.webp')" }}></div>
 
                 <div className="max-w-4xl mx-auto text-center mb-20 relative z-10">
                     <div className="inline-block bg-orange-100 text-orange-800 text-xs font-bold px-4 py-2 rounded-full mb-6 uppercase tracking-widest border border-orange-200">
@@ -23,7 +26,7 @@ export default function About() {
                         {/* Photo Frame */}
                         <div className="relative rounded-t-full rounded-b-3xl overflow-hidden shadow-2xl border-[6px] border-white z-10">
                             <img
-                                src="/rehab-center-director.jpg"
+                                src="/rehab-center-director.webp"
                                 alt="Director"
                                 className="w-full h-auto object-cover"
                             />
